@@ -9,5 +9,4 @@ echo $SSH_KEY > /root/.ssh/authorized_keys
 /usr/sbin/sshd
 echo root:hamada | chpasswd
 service ssh status
-/usr/local/bin/docker-entrypoint.sh -c 'shared_buffers=256MB' -c 'max_connections=200'
-postgres
+/usr/local/bin/docker-entrypoint.sh postgres
