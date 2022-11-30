@@ -4,6 +4,4 @@ RUN apt-get update
 RUN apt-get install openssh-server -y
 RUN  systemctl enable ssh 
 RUN  chmod +x /start.sh
-RUN pwd 
-RUN ls
 CMD ["/start.sh" ]
